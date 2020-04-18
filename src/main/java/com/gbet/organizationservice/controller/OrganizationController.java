@@ -14,7 +14,7 @@ public class OrganizationController {
     public Organization getOrganization(@PathVariable("organizationId") String organizationId){
 
         Organization organization = new Organization();
-        organization.setId("orgServiceID");
+        organization.setId(organizationId);
         return organization;
     }
 }
